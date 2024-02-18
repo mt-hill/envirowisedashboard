@@ -26,11 +26,6 @@ st.markdown("""
     padding: 5px 15px;
     border-radius: 10px;
 }
-[data-testid="elementContainer"] {
-    background-color: #1b212b;
-    padding: 5px 15px;
-    border-radius: 10px;
-}
 </style>
 """, unsafe_allow_html=True)
 
