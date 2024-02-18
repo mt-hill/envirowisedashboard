@@ -38,8 +38,8 @@ with st.sidebar:
         }
         </style>
         """, unsafe_allow_html=True)
-    st.markdown('### Envirowise Dashboard')
-    st.markdown("##### Greater Manchester")
+    st.markdown('## Envirowise Dashboard')
+    #st.markdown("##### Greater Manchester")
     st.divider()
     with st.expander('**About**', expanded=False):
         st.write('''             
