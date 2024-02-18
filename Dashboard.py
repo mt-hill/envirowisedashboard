@@ -88,7 +88,7 @@ def map():
     return fig
 
 def melt():
-    heatdata = pd.read_csv(".data/transport.csv")
+    heatdata = pd.read_csv(".data/emissions.csv")
     heatdata = heatdata.drop(columns={'Unnamed: 0'})
     heatdatamelt = heatdata.melt(id_vars='Year', var_name='Region', value_name='Kt CO2e')
     heatmap = alt.Chart(heatdatamelt).mark_rect().encode(
@@ -119,7 +119,7 @@ def charging_data(dataset, metric):
     return chargers
 
 def vehicles_data(region):
-    cars = pd.read_csv(".data/cars.csv")
+    cars = pd.read_csv(".data/vehicles.csv")
     cars['Region Name'] = cars['Region Name'].str.strip()
     df = cars[cars['Region Name'] == region]
     df = df.T
