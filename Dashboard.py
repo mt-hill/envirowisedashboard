@@ -41,7 +41,7 @@ with st.sidebar:
     st.markdown('### Envirowise Dashboard')
     st.markdown("##### Greater Manchester")
     st.divider()
-    with st.expander('**About**', expanded=True):
+    with st.expander('**About**', expanded=False):
         st.write('''             
             **Sources**
             - **Emissions**: [UK local authority and regional greenhouse gas emissions national statistics, 2005 to 2021](https://www.gov.uk/government/statistics/uk-local-authority-and-regional-greenhouse-gas-emissions-national-statistics-2005-to-2021)
