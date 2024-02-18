@@ -130,6 +130,7 @@ def vehicles_data(region):
     df['Diesel/Petrol'] = df['Diesel'] + df['Petrol']
     df['pct'] = (df['Hybrid Electric'] + df['Other Fuels'])/(df['Diesel'] + df['Petrol'])*100
     df["Total"] = df['Hybrid Electric'] + df['Other Fuels'] + df['Diesel'] + df['Petrol']
+    df = df.rename_axis('Date')
     
     return df
 
