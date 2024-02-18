@@ -6,7 +6,7 @@ import plotly.graph_objs as go
 import altair as alt
 
 st.set_page_config(
-    page_title="Enviro-Wise Dashboard",
+    page_title="Envirowise Dashboard",
     page_icon="",
     layout="wide",
     initial_sidebar_state="expanded"
