@@ -19,6 +19,7 @@ st.markdown("""
     padding-bottom: 0rem;
     padding-left: 5rem;
     padding-right: 5rem;
+    border-radius: 10px; 
 }
 
 [data-testid="stMetric"] {
@@ -27,6 +28,7 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
+
 with st.sidebar:
     st.markdown("""
         <style>
