@@ -73,7 +73,8 @@ def map():
     fig = px.choropleth(geo, geojson=geo['geometry'], 
                         locations=geo.index, 
                         color=geo['Emissions'],
-                        color_continuous_scale='mint',
+                        color_continuous_scale='matter',
+                        range_color=(216,630),
                         height=555,
                         labels={'Emissions': 'Kt CO2e', 'District': 'Region'}
                         )
@@ -87,6 +88,7 @@ def map():
             scope="europe"
         )
     )
+    fig.update_traces(marker_line_width=0.75,marker_line_color='black')
     return fig
 
 def melt():
@@ -96,7 +98,7 @@ def melt():
     heatmap = alt.Chart(heatdatamelt).mark_rect().encode(
         x=alt.X('Year:O', title=None), 
         y=alt.Y('Region:O', title=None),
-        color=alt.Color('Kt CO2e:Q', scale=alt.Scale(scheme='teals'))
+        color=alt.Color('Kt CO2e:Q', scale=alt.Scale(scheme='magma', reverse=True))
     ).properties(
   
         width=600,
@@ -138,7 +140,7 @@ def vehicles_data(region):
 
 def bar_chart(region):
     df = vehicles_data(region)
-    fig = px.bar(df, x=df.index, y="EV's", title="Electric Vehicles & Hybrids",color_discrete_sequence =['#00ffd9'])
+    fig = px.bar(df, x=df.index, y="EV's", title="Electric Vehicles & Hybrids",color_discrete_sequence =['#C83E73'])
     fig.update_layout(yaxis_title="")
     fig.update_layout(xaxis_title="")
     fig.update_layout(yaxis=dict(side='right'),height=475)
