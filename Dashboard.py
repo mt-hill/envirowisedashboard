@@ -75,6 +75,7 @@ def map():
                         color=geo['Emissions'],
                         color_continuous_scale='mint',
                         height=555,
+                        range_color=(222,700),
                         labels={'Emissions': 'Kt CO2e', 'District': 'Region'}
                         )
     
@@ -97,7 +98,7 @@ def melt():
     heatmap = alt.Chart(heatdatamelt).mark_rect().encode(
         x=alt.X('Year:O', title=None), 
         y=alt.Y('Region:O', title=None),
-        color=alt.Color('Kt CO2e:Q', scale=alt.Scale(scheme='teals', reverse=True))
+        color=alt.Color('Kt CO2e:Q', scale=alt.Scale(scheme='teals', reverse=False))
     ).properties(
   
         width=600,
