@@ -115,7 +115,7 @@ def charging_data(dataset, metric):
     else:
         chargers = chargers[30:]
             
-    chargers = chargers.sort_values(by='Charging Devices',ascending=False)
+    #chargers = chargers.sort_values(by='Charging Devices',ascending=False)
     return chargers
 
 def vehicles_data(region):
