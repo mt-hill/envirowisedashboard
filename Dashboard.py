@@ -162,10 +162,10 @@ with col[1]:
     st.altair_chart(melt(), use_container_width=True)
 
 with col[2]:
-    st.markdown("#### Charging Points")
+    st.markdown("#### Charging Point Statistics")
     st.write("")
     dataset = st.selectbox(
-    'Select a Dataset',
+    'Filter',
     ('All Chargers', 'Rapid Chargers'))
     st.write("")
     metric = st.radio(
