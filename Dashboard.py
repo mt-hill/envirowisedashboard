@@ -144,15 +144,15 @@ def bar_chart(region):
 col = st.columns((2, 4.5, 1.5), gap='medium')
 
 with col[0]:
-    st.markdown(" #### Electric Vehicles")
+    st.markdown(" #### Vehicle Statistic")
     st.write("")
     region = st.selectbox(
     'Region',
     ('Bolton', 'Bury', 'Manchester', 'Oldham', 'Rochdale', 'Salford', 'Stockport', 'Tameside', 'Trafford', 'Wigan'))
     df = vehicles_data(region)
     st.divider()
-    st.metric(label="Total Cars", value=df['Total'].iloc[-1], delta="")
-    st.metric(label="EV's & Hybrids", value=df["EV's"].iloc[-1], delta=f'{round(df["pct"].iloc[-1],2)}% of Total Cars')
+    st.metric(label="Total Vehicles", value=df['Total'].iloc[-1], delta="")
+    st.metric(label="Electric & Hybrid Vehicles", value=df["EV's"].iloc[-1], delta=f'{round(df["pct"].iloc[-1],2)}% of Total Vehicles')
     
     st.plotly_chart(bar_chart(region), use_container_width=True)
 
