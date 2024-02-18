@@ -31,6 +31,7 @@ st.markdown("""
     background-color: #1b212b;
     text-align: center;
     padding: 15px 0;
+    border-radius: 20px;
 }
 
 [data-testid="stMetricLabel"] {
