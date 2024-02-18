@@ -162,7 +162,7 @@ with col[1]:
     st.altair_chart(melt(), use_container_width=True)
 
 with col[2]:
-    st.markdown("#### Charging Point Statistics")
+    st.markdown("#### Charging Points")
     st.write("")
     dataset = st.selectbox(
     'Filter',
