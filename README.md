@@ -1,5 +1,5 @@
 
-### https://envirowisedashboard.streamlit.app/
+### https://envirowisedash.streamlit.app/
 
 ## Envirowise Streamlit Dashboard
 
