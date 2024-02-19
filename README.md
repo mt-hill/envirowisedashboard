@@ -1,7 +1,7 @@
 
 # Envirowise Dashboard
 
-*Python application designed to provide insights into environmental and electric vehicle data related to Greater Manchester. Dashboard built using Streamlit with visualisations of CO2 levels, electric vehicle statistics, and charging point statistics across various regions of Greater Manchester.*
+*Python application designed to provide insights into environmental and electric vehicle data related to Greater Manchester. Dashboard built using Streamlit with visualisations of CO2 levels, electric vehicle statistics, and charging point statistics across regions of Greater Manchester.*
 
 *The idea is to provide relevent data for decision making leading to improving electric vehicle infrastructure in Greater Manchester incentivising electric vehicle usage*
 
