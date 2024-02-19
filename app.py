@@ -144,7 +144,7 @@ def bar_chart(region):
                  x=df.index, 
                  y="EV's", 
                  title="Electric Vehicles & Hybrids",
-                 color_discrete_sequence =['#ED6237'])
+                 color_discrete_sequence =['#DF6040'])
     fig.update_layout(yaxis_title="")
     fig.update_layout(xaxis_title="")
     fig.update_layout(yaxis=dict(side='right'),height=475)
