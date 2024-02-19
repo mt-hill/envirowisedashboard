@@ -13,14 +13,14 @@
 
 ## How to Use
 ### Column 1
-  - *Use dropdown menu to view electric vehicles stats for a specific region*
+  - *Use dropdown menu to view electric vehicles stats for specific regions*
 ### Column 2
-  - *Hover the map to view specific CO2 levels of a region*
-  - *Hover anywhere on the heatmap to view specific year and region*
+  - *Hover the map to view CO2 levels specific regions*
+  - *Hover anywhere on the heatmap to view any year and region CO2 levels*
 ### Column 3
   - *Filter charging point df using the dropdown*
   - *Select a metric for the charging point df using radio buttons*
-  - *Clicking the charging point column header will sort the df high to low or low to high*
+  - *Clicking column header will sort the df (high to low, low to high, alphabetically)*
 
 
 ## Sources
