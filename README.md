@@ -5,8 +5,8 @@
 
 *The idea is to provide relevent data for decision making leading to improving electric vehicle infrastructure in Greater Manchester incentivising electric vehicle usage*
 
-- ### More CO2 == More Petrol/Diesel vehicles 
-- ### Less CO2 == More EV's/Hybrids
+- #### More CO2 == More Petrol/Diesel vehicles 
+- #### Less CO2 == More EV's/Hybrids
 
 
 
