@@ -12,60 +12,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.markdown("""
-<style>
-.block-container {
-    padding-top: 1rem;
-    padding-bottom: 0rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-}
-
-[data-testid="stMetric"] {
-    background-color: #252525;
-    padding: 5px 15px;
-    border-radius: 10px;
-}
-</style>
-""", unsafe_allow_html=True)
-
-with st.sidebar:
-    st.markdown("""
-        <style>
-        .block-container {
-            padding-top: 1rem;
-            padding-bottom: 0rem;
-            padding-left: 5rem;
-            padding-right: 5rem;
-        }
-        </style>
-        """, unsafe_allow_html=True)
-    st.title('Envirowise Dashboard')
-    #st.markdown("##### Greater Manchester")
-    st.divider()
-    with st.expander('**About**', expanded=False):
-        st.write('''             
-            **Sources**
-            - **Emissions**: [UK local authority and regional greenhouse gas emissions national statistics, 2005 to 2021](https://www.gov.uk/government/statistics/uk-local-authority-and-regional-greenhouse-gas-emissions-national-statistics-2005-to-2021)
-            
-            - **Location**: [Local Authority Districts (December 2023) Boundaries UK BFC](https://geoportal.statistics.gov.uk/datasets/127c4bda06314409a1fa0df505f510e6_0/explore?location=53.465754%2C-1.068236%2C6.89)
-            
-            - **Vehicles**: [Vehicle Statistics](https://www.gov.uk/government/collections/vehicles-statistics)
-            
-            - **Charging Devices**: [Electric vehicle charging device statistics: October 2023](https://www.gov.uk/government/statistics/electric-vehicle-charging-device-statistics-october-2023/electric-vehicle-charging-device-statistics-october-2023)
-            
-            
-            ''')
-        st.divider()
-        st.write('''         
-            **Metrics**    
-                 
-            - **Kt CO2e** = *Kiloton of Carbon Dioxide*
-            
-            - **Per 100k population** = *Based on a population size of 100,000 individuals*
-
-            ''')
-
 def map():
     geo = gpd.read_file(".data/mapdata.geojson")
     geo = geo.set_index("District")
@@ -144,14 +90,67 @@ def bar_chart(region):
                  x=df.index, 
                  y="EV's", 
                  title="Electric Vehicles & Hybrids",
-                 color_discrete_sequence =['#DF6040'])
+                 color_discrete_sequence=['#FFEFD5'])
     fig.update_layout(yaxis_title="")
     fig.update_layout(xaxis_title="")
     fig.update_layout(yaxis=dict(side='right'),height=475)
     return fig
 
-col = st.columns((2, 4.5, 1.5), gap='medium')
+st.markdown("""
+<style>
+.block-container {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
 
+[data-testid="stMetric"] {
+    background-color: #252525;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+</style>
+""", unsafe_allow_html=True)
+
+with st.sidebar:
+    st.markdown("""
+        <style>
+        .block-container {
+            padding-top: 1rem;
+            padding-bottom: 0rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+        </style>
+        """, unsafe_allow_html=True)
+    st.title('Envirowise Dashboard')
+    #st.markdown("##### Greater Manchester")
+    st.divider()
+    with st.expander('**About**', expanded=True):
+        st.write('''             
+            **Sources**
+            - **Emissions**: [UK local authority and regional greenhouse gas emissions national statistics, 2005 to 2021](https://www.gov.uk/government/statistics/uk-local-authority-and-regional-greenhouse-gas-emissions-national-statistics-2005-to-2021)
+            
+            - **Location**: [Local Authority Districts (December 2023) Boundaries UK BFC](https://geoportal.statistics.gov.uk/datasets/127c4bda06314409a1fa0df505f510e6_0/explore?location=53.465754%2C-1.068236%2C6.89)
+            
+            - **Vehicles**: [Vehicle Statistics](https://www.gov.uk/government/collections/vehicles-statistics)
+            
+            - **Charging Devices**: [Electric vehicle charging device statistics: October 2023](https://www.gov.uk/government/statistics/electric-vehicle-charging-device-statistics-october-2023/electric-vehicle-charging-device-statistics-october-2023)
+            
+            
+            ''')
+        st.divider()
+        st.write('''         
+            **Metrics**    
+                 
+            - **Kt CO2e** = *Kiloton of Carbon Dioxide*
+            
+            - **Per 100k population** = *Based on a population size of 100,000 individuals*
+
+            ''')
+
+col = st.columns((2, 4.5, 1.5), gap='medium')
 with col[0]:
     st.markdown(" #### Vehicle Statistic")
     st.write("")
