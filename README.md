@@ -2,9 +2,8 @@
 ### https://envirowisedash.streamlit.app/
 
 ## Envirowise Streamlit Dashboard
-### Business Process Support (COLLEGE MODULE)
 
-  *Python dashboard designed to provide insights into environmental and electric vehicle data related to Greater Manchester. Dashboard built with streamlit
+  *Python dashboard designed to provide insights into environmental and electric vehicle data related to Greater Manchester. Dashboard built with streamlit*
 
 
 
