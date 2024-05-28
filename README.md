@@ -5,6 +5,7 @@
 
   *Python dashboard designed to provide insights into environmental and electric vehicle data related to Greater Manchester. Dashboard built with streamlit*
 
+![streamlitdash](https://github.com/mt-hill/envirowisedashboard/assets/138307546/8011f8b0-6bf0-4734-8077-e048d0d248f7)
 
 
 ## Sources
