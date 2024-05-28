@@ -2,25 +2,10 @@
 ### https://envirowisedash.streamlit.app/
 
 ## Envirowise Streamlit Dashboard
+### Business Process Support (COLLEGE MODULE)
 
-  *Python desktop app **(not responsive for mobile)** designed to provide insights into environmental and electric vehicle data related to Greater Manchester. Dashboard built using Streamlit with visualisations of CO2 levels, electric vehicle statistics, and charging point statistics across regions of Greater Manchester.*
+  *Python dashboard designed to provide insights into environmental and electric vehicle data related to Greater Manchester. Dashboard built with streamlit
 
-  *The idea is to provide relevent information for decision making leading to improving electric vehicle infrastructure in Greater Manchester which incentivises electric vehicle usage*
-
-- #### More CO2 == More Petrol/Diesel vehicles 
-- #### Less CO2 == More EV's/Hybrids
-
-
-## How to Use
-### Left Column
-  - *Use dropdown menu to view electric vehicles stats for specific regions*
-### Middle Column
-  - *Hover the map to view CO2 levels specific regions*
-  - *Hover anywhere on the heatmap to view any year and region CO2 levels*
-### Right Column
-  - *Filter charging point df using the dropdown*
-  - *Select a metric for the charging point df using radio buttons*
-  - *Clicking column header will sort the df (high to low, low to high, alphabetically)*
 
 
 ## Sources
