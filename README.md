@@ -1,5 +1,6 @@
 
 ### https://envirowisedash.streamlit.app/
+Hosted on a free service. May take a while to load.
 
 ## Envirowise Streamlit Dashboard
 
